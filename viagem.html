@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Um bot que irá moderar e deixar a sua comunidade segura de um jeito fácil!">
+    <title>Viagens da Fabíola</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <button id="btHome" class="conteudo-principal-escrito-botao"><img src="imagens/arrow-left.png"
+                alt="Voltar"></button>
+    </header>
+
+    <main class="conteudo">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h1 id="title" class="conteudo-principal-escrito-titulo">Escolha uma das 3 viagens listas abaixo:
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 col-xs-12 content">
+                    <img class="airImagem" src="imagens/gfViagem.gif" alt="aviao">
+                    <img class="imagemTravel" src="imagens/maldivas.png" alt="Ilhas Maldivas">
+                    <button id="btnChoisePlaceMaldivas" class="conteudo-principal-escrito-botao btnChoisePlace">Ilhas
+                        Maldivas</button>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12 content">
+                    <img class="airImagem" src="imagens/gfViagem.gif" alt="aviao">
+                    <img class="imagemTravel" src="imagens/grecia.jpg" alt="Grécia">
+                    <button id="btnChoisePlaceGrecia"
+                        class="conteudo-principal-escrito-botao btnChoisePlace">Grécia</button>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12 content">
+                    <img class="airImagem" src="imagens/gfViagem.gif" alt="aviao">
+                    <img class="imagemTravel" src="imagens/cancun.jpg" alt="México Cancún">
+                    <button id="btnChoisePlaceCancun" class="conteudo-principal-escrito-botao btnChoisePlace">México
+                        Cancún</button>
+                </div>
+            </div>
+            <div id="footer" class="row"></div>
+        </div>
+    </main>
+
+</body>
+
+<script>$('#btnChoisePlaceMaldivas').click(function (e) { window.parent.location = 'pix.html' })</script>
+<script>$('#btnChoisePlaceGrecia').click(function (e) { window.parent.location = 'pix.html' })</script>
+<script>$('#btnChoisePlaceCancun').click(function (e) { window.parent.location = 'pix.html' })</script>
+
+<script>$('#btHome').click(function (e) { window.parent.location = 'index.html' })</script>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Um bot que irá moderar e deixar a sua comunidade segura de um jeito fácil!">
+    <title>Viagens da Fabíola</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</head>
+
+<header class="cabecalho">
+    <button id="btViagem" class="conteudo-principal-escrito-botao"><img src="imagens/arrow-left.png"
+            alt="Voltar"></button>
+</header>
+
+<body>
+    <main class="conteudo">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h1 id="title" class="conteudo-principal-escrito-titulo">Mande um pix com a quantia abaixo do
+                        presente:
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img class="imgPixStyle" src="imagens/pix.png" alt="pix">
+                </div>
+            </div>
+            <div id="footer" class="row"></div>
+        </div>
+    </main>
+</body>
+
+<footer>
+    <h1 id="title" class="conteudo-principal-escrito-titulo">Muito obrigado pela contribuição</h1>
+    <p>
+        <img class="imgMickeyTravel" src="imagens/mickeyTravel.gif" alt="Preparando para viajar">
+</footer>
+
+<script>$('#btViagem').click(function (e) { window.parent.location = 'viagem.html' })</script>
+
+</html>
