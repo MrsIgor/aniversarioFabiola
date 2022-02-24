@@ -13,14 +13,15 @@ html{
 
 body {
   font-size: 100%;
-  background-image: linear-gradient(#2F2325, #8E5D52);
+  background-image: linear-gradient(#8E5D52, #8E5D52);
   background-color: #2F2325;
 }
 
 #footer{
-  border-top: 0.4px solid #FFF2E7;
+  bottom: 0;
   height: 10%;
   margin-top: 5%;
+  border-top: 0.4px solid #FFF2E7;
 }
 
 .container-fluid{
@@ -69,7 +70,6 @@ body {
 .conteudo-principal-escrito-titulo {
   font-family: 'Righteous', cursive;
   font-weight: 400;
-  font-size: 64px;
   color: #FFF2E7;
 }
 
@@ -113,7 +113,6 @@ body {
 }
 
 .conteudo-secundario-titulo {
-  border-top: 0.4px solid #FFF2E7;
   padding-top: 48px;
   font-family: 'Righteous', cursive;
   font-weight: 400;
@@ -175,7 +174,7 @@ body {
   top: 3%;
   left: 0;
   animation-name: drive;
-  animation-duration: 5s;
+  animation-duration: 3.5s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -191,22 +190,59 @@ body {
 }
 
 .imgPixStyle{
-  height: 400px;
-  width: 400px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto
+  height: 20%;
+  width: 20%;
 }
 
-.imgMickeyTravel{
-  height: 200px;
-  width: 200px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto
+#wrapperPix{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#idMickeyTravel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 5px;
+  position: fixed;
+  border-top: 0.4px solid #FFF2E7;
+  bottom: 0;
+  width: 100%;
+  padding: 5%;
+}
+
+#imgMickeyTravel{
+  margin-right: 10px;
 }
 
 @keyframes drive {
-  from{ transform: translateX(0px)}
-  to {transform: translateX(250px);}
+  from{ transform: translateX(0%)}
+  to {transform: translateX(180%);}
+}
+
+@media only screen and (max-width: 576px) {
+  .imgPixStyle{
+    height: 100%;
+    width: 100%;
+    margin-top: 10%;
+   margin-bottom: 10%;
+  }
+  #imgMickeyTravel{
+    width: 160px;
+    height: 132px ;
+  }
+  
+}
+
+@media only screen and (max-width: 992px) {
+  .imgPixStyle{
+    height: 75%;
+    width: 75%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
 }

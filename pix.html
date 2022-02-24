@@ -25,25 +25,26 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <h1 id="title" class="conteudo-principal-escrito-titulo">Mande um pix com a quantia abaixo do
-                        presente:
+                    <h1 id="title" class="conteudo-principal-escrito-titulo">Mande um PIX de presente:
                     </h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <img class="imgPixStyle" src="imagens/pix.png" alt="pix">
+                    <div id="wrapperPix">
+                        <img class="imgPixStyle" src="imagens/pix.png" alt="pix">
+                    </div>
                 </div>
             </div>
-            <div id="footer" class="row"></div>
         </div>
     </main>
 </body>
 
 <footer>
-    <h1 id="title" class="conteudo-principal-escrito-titulo">Muito obrigado pela contribuição</h1>
-    <p>
-        <img class="imgMickeyTravel" src="imagens/mickeyTravel.gif" alt="Preparando para viajar">
+    <div id="idMickeyTravel">
+        <img id="imgMickeyTravel" src="imagens/mickeyTravel.gif" alt="micketViagem">
+        <h1 id="title" class="conteudo-principal-escrito-titulo">Thanks</h1>
+    </div>
 </footer>
 
 <script>$('#btViagem').click(function (e) { window.parent.location = 'viagem.html' })</script>
